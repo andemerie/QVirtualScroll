@@ -10,7 +10,7 @@
     "deploy": "rm -rf dist && cd ./example/simple && npm run build && rm -rf deploy && mkdir deploy && cp -R dist/* package.json deploy && cp README.md deploy/README.md && cd ../../ && rm -rf deploy && mkdir -p deploy/simple && cp -R ./example/simple/deploy/* ./deploy/simple && cp ./example/index.html ./deploy && node_modules/git-directory-deploy/bin/git-directory-deploy.sh -ddeploy -bgh-pages -rhttps://github.com/flespi-software/QVirtualScroll.git && rm -rf deploy"
   },
   "dependencies": {
-    "flespi-io-js": "git+https://github.com/flespi-software/flespi-io-js.git",
+    "flespi-io-js": "git+https://github.com/andemerie/flespi-io-js.git",
     "vue-draggable-resizable": "^1.7.5",
     "vue-virtual-scroll-list": "^1.2.8",
     "vuedraggable": "^2.16.0"
